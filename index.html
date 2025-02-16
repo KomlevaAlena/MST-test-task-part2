@@ -9,35 +9,64 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="body">
-    <!-- <header>
-        <h1>Заголовок страницы</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
-    </header> -->
 
-    <main>
-        <div class="video-background">
-            <video autoplay muted loop id="myVideo">
-                <source src="video/video.mp4" type="video/mp4">
-            </video>
-        </div>
-        
+    <!-- Фоновое видео -->
+    <div class="video-background">
+        <video autoplay muted loop id="myVideo">
+            <source src="video/video.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+    </div>
 
-        
-        <!-- <section>
-            <h2>О нас</h2>
-            <p>Здесь находится основной контент страницы.</p>
-        </section> -->
+    <!-- Основной контент -->
+    <main class="main">
+        <svg viewBox="0 0 500 210" width="500px">
+            <defs>
+              <mask id="mask">
+                <rect width="500" height="320" x="0" fill="#fff" />
+                
+                <rect width="200" height="60" x="140" fill="red" />
+                <rect width="220" height="60" x="130" y="70" fill="red" />
+                <rect width="250" height="60" x="130" y="140" fill="red" />
+              </mask>
+            </defs>
+            
+            
+            
+          
+            
+            <rect width="500" height="320" fill="#000" mask="url(#mask)"/>
+            
+            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="0px" y="45px">We're here</text>
+            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="350px" y="45px">to  make</text>
+            
+              <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="0px" y="110px">home</text>
+            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="370px" y="110px">home</text>
+            
+            
+              
+            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="0px" y="185px">book</text>
+            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="390px" y="185px">book</text>
+
+            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="0px" y="230px">book</text>
+            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="390px" y="230px">book</text>
     </main>
 
+    <!-- Подвал -->
     <footer>
-        <!-- <p>&copy; 2023 Ваше имя или компания. Все права защищены.</p> -->
     </footer>
+
+    <!-- SVG маска для отверстий -->
+    <!-- <svg class="svg-mask">
+        <defs>
+            <mask id="hole-mask">
+                <rect width="100%" height="100%" fill="white" />
+                <rect x="50" y="50" width="50" height="20" fill="black" />
+                <rect x="200" y="100" width="50" height="20" fill="black" />
+                <rect x="400" y="150" width="50" height="20" fill="black" />
+            </mask>
+        </defs>
+    </svg> -->
 
     <script src="script.js"></script>
 </body>
