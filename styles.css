@@ -27,7 +27,7 @@
 /* Контейнер для фонового видео */
 .video-background {
     position: fixed;
-    top: 0;
+    top: 40px;
     left: 0;
     width: 1920px;
     /* height: 100%; */
@@ -41,6 +41,8 @@
     object-fit: cover;
 }
 
+
+
 /* Основной контент */
 .main {
     position: relative;
@@ -48,9 +50,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
+    height: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 40px;
     /* background-color: rgba(0, 0, 0, 1); */
 }
 
@@ -64,7 +66,7 @@
 
 /* Стили для текста в SVG */
 text {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 700;
     fill: white;
 }

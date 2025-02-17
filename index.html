@@ -11,23 +11,25 @@
 <body class="body">
 
     <!-- Фоновое видео -->
-    <div class="video-background">
-        <video autoplay muted loop id="myVideo">
-            <source src="video/video.mp4" type="video/mp4">
-            Ваш браузер не поддерживает видео.
-        </video>
-    </div>
+    
 
     <!-- Основной контент -->
     <main class="main">
-        <svg viewBox="0 0 500 210" width="500px">
+        <div class="video-background">
+            <video autoplay muted loop id="myVideo" width="1200px">
+                <source src="video/video.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
+        <svg viewBox="0 0 1000 620" width="1200px">
             <defs>
               <mask id="mask">
-                <rect width="500" height="320" x="0" fill="#fff" />
+                <rect width="1000" height="620" x="0" fill="#fff" />
                 
-                <rect width="200" height="60" x="140" fill="red" />
-                <rect width="220" height="60" x="130" y="70" fill="red" />
-                <rect width="250" height="60" x="130" y="140" fill="red" />
+                <rect width="245" height="40" x="375" y="5" fill="red" />
+                <rect width="100" height="40" x="260" y="70" fill="red" />
+                <rect width="160" height="40" x="380" y="145" fill="red" />
+                <rect width="490" height="40" x="420" y="216" fill="red" />
               </mask>
             </defs>
             
@@ -35,21 +37,22 @@
             
           
             
-            <rect width="500" height="320" fill="#000" mask="url(#mask)"/>
+            <rect width="1000" height="620" fill="#000" mask="url(#mask)"/>
             
-            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="0px" y="45px">We're here</text>
-            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="350px" y="45px">to  make</text>
+            <text style="font-size: 70px;" font-family="sans-serif" fill="#fff" x="0px" y="45px">We're here</text>
+            <text style="font-size: 70px;" font-family="sans-serif" fill="#fff" x="640px" y="45px">to  make</text>
             
-              <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="0px" y="110px">home</text>
-            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="370px" y="110px">home</text>
+              <text style="font-size: 70px;" font-family="sans-serif" fill="#fff" x="0px" y="110px">healthy</text>
+            <text style="font-size: 70px;" font-family="sans-serif" fill="#fff" x="370px" y="110px">living effortless,</text>
             
             
               
-            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="0px" y="185px">book</text>
-            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="390px" y="185px">book</text>
+            <text style="font-size: 70px;" font-family="sans-serif" fill="#fff" x="0px" y="185px">so you can</text>
+            <text style="font-size: 70px;" font-family="sans-serif" fill="#fff" x="555px" y="185px">live longer</text>
 
-            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="0px" y="230px">book</text>
-            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="390px" y="230px">book</text>
+            <text style="font-size: 70px;" font-family="sans-serif" fill="#fff" x="0px" y="255px">and happier</text>
+            <text style="font-size: 70px;" font-family="sans-serif" fill="#fff" x="390px" y="255px"></text>
+        </svg>
     </main>
 
     <!-- Подвал -->
