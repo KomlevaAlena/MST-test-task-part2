@@ -7,44 +7,44 @@
   }
 
 /* Сброс стилей по умолчанию */
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 /* Основные стили для body */
-.body {
+/* .body {
     font-family: "Arial", sans-serif;
     background-color: rgba(0, 0, 0, 1);
     color: white;
     overflow: hidden;
     display: block;
-    width: 1920px;
+    width: 1200px;
     margin: 0 auto;
-}
+} */
 
 /* Контейнер для фонового видео */
-.video-background {
+/* .video-background {
     position: fixed;
     top: 40px;
-    left: 0;
-    width: 1920px;
+    /* left: 50%; */
+    /* width: 1200px; */
     /* height: 100%; */
-    z-index: -1;
-}
+    /* z-index: -1;
+}  */
 
-Стили для видео
+/* Стили для видео
 #myVideo {
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
-}
+} */
 
 
 
 /* Основной контент */
-.main {
+/* .main {
     position: relative;
     z-index: 1;
     display: flex;
@@ -53,40 +53,134 @@
     height: 100%;
     text-align: center;
     padding: 40px;
-    /* background-color: rgba(0, 0, 0, 1); */
 }
 
-/* Контейнер для видео через маску */
-/* .video-cover {
-    width: 100%;
-    height: 100%;
-    background: url(video/video.mp4) no-repeat center center;
-    background-size: cover;
-} */
 
 /* Стили для текста в SVG */
-text {
+/* text {
     font-size: 50px;
     font-weight: 700;
     fill: white;
 }
 
-/* @media (max-width: 1920px) and (min-width: 1201px) {
+.svg-medium {
+    display: none;
+}
+
+@media (max-width: 1920px) and (min-width: 1201px) {
     body {
         font-size: 16px;
     }
 
-}
+} */
 
-@media (max-width: 1200px) and (min-width: 769px) {
-    body {
-        font-size: 14px;
+/* @media (max-width: 1200px) {
+    .body {
+        width: 320px;
     }
-}
+    
+    .svg-big {
+        display: none;
+    }
 
-@media (max-width: 768px) {
+    .svg-medium {
+        display: block;
+    }
+
+    .video-background {
+        /* left: 17%; */
+        /* width: 320px;
+        #myVideo {
+            min-width: 320px;
+        }
+    }
+}  */
+
+/* @media (max-width: 768px) {
     body {
         font-size: 12px;
     }
 } */
 
+body {
+    background: black;
+    font-family: "Arial", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  
+  video {
+    width: 100%;
+    position: relative;
+  }
+  
+  .text-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+
+    &:last-of-type {
+        height: 100vw;
+        background-color: black;
+    }
+  }
+  
+  .text {
+    background-color: black;
+    color: white;
+    font-family: arial;
+    font-size: 8vw;
+    flex-grow: 0;
+  }
+  
+  .hollow {
+    border-width: 10px;
+    border-color: black;
+    border-style: solid;
+    flex-grow: 1;
+  }
+
+  .text-mini {
+    display: none;
+  }
+
+  .hollow-mini {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+
+    .row {
+        &:nth-of-type(4n) {
+            .text-mini {
+                width: 100%;
+                text-align: justify;
+            }
+        }
+    }
+    .text-big {
+        display: none;
+    }
+
+    .text-mini {
+        display: block;
+      }
+
+    .hollow-big {
+        display: none;
+    }
+
+    .hollow-mini {
+        display: block;
+      }
+
+  }

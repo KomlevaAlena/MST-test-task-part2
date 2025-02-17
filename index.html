@@ -15,13 +15,14 @@
 
     <!-- Основной контент -->
     <main class="main">
-        <div class="video-background">
+        <!-- <div class="video-background">
+
             <video autoplay muted loop id="myVideo" width="1200px">
                 <source src="video/video.mp4" type="video/mp4">
                 Ваш браузер не поддерживает видео.
             </video>
         </div>
-        <svg viewBox="0 0 1000 620" width="1200px">
+        <svg viewBox="0 0 768 620" width="1200px" class="svg-big">
             <defs>
               <mask id="mask">
                 <rect width="1000" height="620" x="0" fill="#fff" />
@@ -33,10 +34,6 @@
               </mask>
             </defs>
             
-            
-            
-          
-            
             <rect width="1000" height="620" fill="#000" mask="url(#mask)"/>
             
             <text style="font-size: 70px;" font-family="sans-serif" fill="#fff" x="0px" y="45px">We're here</text>
@@ -44,33 +41,90 @@
             
               <text style="font-size: 70px;" font-family="sans-serif" fill="#fff" x="0px" y="110px">healthy</text>
             <text style="font-size: 70px;" font-family="sans-serif" fill="#fff" x="370px" y="110px">living effortless,</text>
-            
-            
-              
+
             <text style="font-size: 70px;" font-family="sans-serif" fill="#fff" x="0px" y="185px">so you can</text>
             <text style="font-size: 70px;" font-family="sans-serif" fill="#fff" x="555px" y="185px">live longer</text>
 
             <text style="font-size: 70px;" font-family="sans-serif" fill="#fff" x="0px" y="255px">and happier</text>
             <text style="font-size: 70px;" font-family="sans-serif" fill="#fff" x="390px" y="255px"></text>
         </svg>
+
+        <svg viewBox="0 0 320 620" width="1200px" class="svg-medium">
+            <defs>
+              <mask id="mask">
+                <rect width="320" height="620" x="0" fill="#fff" />
+                
+                <rect width="245" height="40" x="375" y="5" fill="red" />
+                <rect width="100" height="40" x="260" y="70" fill="red" />
+                <rect width="100" height="40" x="260" y="70" fill="red" />
+                <rect width="160" height="40" x="380" y="145" fill="red" />
+                <rect width="490" height="40" x="420" y="216" fill="red" />
+              </mask>
+            </defs>
+            
+            <rect width="320" height="620" fill="#000" mask="url(#mask)"/>
+            
+            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="10px" y="45px">We're here</text>
+            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="10px" y="100px">to</text>
+            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="650px" y="100px">make</text>
+            
+            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="10px" y="185px">healthy living</text>
+            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="415px" y="185px"> effortless, so you</text>
+
+            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="10px" y="255px">can</text>
+            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="555px" y="255px">live longer</text>
+
+            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="10px" y="305px">and happier</text>
+            <text style="font-size: 40px;" font-family="sans-serif" fill="#fff" x="390px" y="305px"></text>
+        </svg> -->
+
+        <video autoplay muted loop id="myVideo">
+            <source src="video/video.mp4" type="video/mp4">
+        </video>
+        <div class="text-container">
+            <div class="row">
+                <span class="text">We're here</span>
+                <div class="hollow"></div>
+                <span class="text text-big">to make</span>
+            </div>
+            <div class="row">
+                <span class="text text-mini">to</span>
+                <div class="hollow hollow-mini"></div>
+                <span class="text text-mini">make</span>
+                <span class="text text-big">healthy</span>
+                <div class="hollow hollow-big"></div>
+                <span class="text text-big">living effortless,</span>
+            </div>
+            <div class="row">
+                <div class="hollow hollow-mini"></div>
+                <span class="text text-mini">healthy living</span>
+                <span class="text text-big"> so you can</span>
+                <div class="hollow hollow-big"></div>
+                <span class="text text-big">live longer</span>
+            </div>
+            <div class="row">
+                <span class="text text-mini">effortless, so you</span>
+                <span class="text text-big">and happier</span>
+                <div class="hollow hollow-big"></div>
+            </div>
+            <div class="row">
+                <span class="text text-mini">can</span>
+                <div class="hollow hollow-mini"></div>
+                <span class="text text-mini">live longer</span>
+            </div>
+            <div class="row">
+                <span class="text text-mini">and happier</span>
+                <div class="hollow hollow-mini"></div>
+            </div>
+            <div class="row">
+            </div>
+        </div>
     </main>
 
     <!-- Подвал -->
     <footer>
     </footer>
 
-    <!-- SVG маска для отверстий -->
-    <!-- <svg class="svg-mask">
-        <defs>
-            <mask id="hole-mask">
-                <rect width="100%" height="100%" fill="white" />
-                <rect x="50" y="50" width="50" height="20" fill="black" />
-                <rect x="200" y="100" width="50" height="20" fill="black" />
-                <rect x="400" y="150" width="50" height="20" fill="black" />
-            </mask>
-        </defs>
-    </svg> -->
-
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>
